@@ -83,7 +83,9 @@ color:#999898;
   display: none;
   width: 30vw;
 }
-
+.filme img {
+    height: 90px;
+  }
 
 /* ///Extra small devices (portrait phones, less than 576px) */
 /* // No media query since this is the default in Bootstrap */
@@ -91,7 +93,7 @@ color:#999898;
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .filme img {
-    height: 140px;
+    height: 120px;
   }
   .full-banner{
       min-height: 400px;
