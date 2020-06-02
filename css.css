@@ -48,16 +48,63 @@ h5,
 h6 {
   color: #ccc;
 }
+/* tirando borda do botao assistir */
+#assistir {
+  border-radius: 0px;
+  background-color: #e30f19;
+}
+h5.card-title {
+  margin-top: 80px !important;
+  color: white;
+}
+.card-text {
+  color: #ccc !important;
+}
+.card-img {
+  border-radius: 0px !important;
+}
+
+.full-banner{
+    background-image: url('fundo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 120px;
+/* tentando fazer sem pegar uma foto com gradient 
+    -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));*/
+padding-top:60px !important;
+    
+}
+.full-banner small, .full-banner p{
+color:#999898;
+}
+.desc{
+  display: none;
+  width: 30vw;
+}
+
 
 /* ///Extra small devices (portrait phones, less than 576px) */
 /* // No media query since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-}
+    .filme img {
+    height: 140px;
+  }
+  .full-banner{
+      min-height: 400px;
+  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+     .filme img {
+    height: 120px;
+  }
+  .full-banner{
+      min-height: 400px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -67,15 +114,28 @@ h6 {
     background: rgb(0, 0, 0);
     background: linear-gradient(
       -180deg,
-      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 1) 45%,
       rgba(0, 0, 0, 0) 100%
     );
+    border-bottom: 0px;
+  }
+    .filme img {
+    height: 110px;
+  }
+  .full-banner{
+      min-height: 400px;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .filme img {
-    height: 200px;
+    height: 110px;
+  }
+  .full-banner{
+      min-height: 600px;
+  }
+  .desc{
+    display: block;
   }
 }
