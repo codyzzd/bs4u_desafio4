@@ -116,7 +116,12 @@ h5.card-title {
   transform: scale(1.2);
 }
 
-
+/*
+.carousel {
+  width : 1000px;
+  margin: 0 auto;
+}
+*/
 
 /* ///Extra small devices (portrait phones, less than 576px) */
 /* // No media query since this is the default in Bootstrap */

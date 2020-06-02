@@ -1,3 +1,4 @@
+/*
 .wrapper {
     display              : grid;
     grid-template-columns: repeat(3, 100%);
@@ -49,16 +50,16 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
 
-.filme a:nth-of-type(1) {
+.filme:nth-of-type(1) {
     top       : 0;
     bottom    : 0;
     left      : 0;
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
 
-.filme a:nth-of-type(2) {
+.filme:nth-of-type(2) {
     top       : 0;
     bottom    : 0;
     right     : 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
-}
+}*/

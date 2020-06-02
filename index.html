@@ -12,7 +12,8 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- ------------------ chamando bootstrap e fontawesome ------------------- -->
     <link rel="stylesheet" href="css.css" />
-    <link rel="stylesheet" href="css2.css" />
+    <!-- <link rel="stylesheet" href="css2.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
   </head>
 
   <body>
@@ -80,7 +81,7 @@
     <!-- -------------------------- populares inicio --------------------------- -->
     <div class="px-0 ml-3 py-3">
       <h2 class="h4 mb-4">Populares na Netflix</h2>
-      <div class="d-flex flex-nowrap">
+      <div class="d-flex flex-nowrap py-3 overflow-hidden filmes">
         <div class="filme">
           <img
             src="https://occ-0-1567-1123.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRvngexxF8H1-OzRWFSj6ddD-aB93tTBP9kMNz3cIVfuIfLEP1E_0saiNAwOtrM6xSOXvoiSCMsihWSkW0dq808-R7_lBnr6WHbjkKBX6I3sD0uCcS8kSPbRjEDdG8CeeVXEAEV6spQ.webp"
@@ -168,7 +169,7 @@
     <!-- --------------------------- em alta inicio ---------------------------- -->
     <div class="px-0 ml-3 py-3">
       <h2 class="h4 mb-4">Em Alta</h2>
-      <div class="d-flex flex-nowrap">
+      <div class="d-flex flex-nowrap py-3 overflow-hidden filmes">
         <div class="filme">
           <img
             src="https://occ-0-1567-1123.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRvngexxF8H1-OzRWFSj6ddD-aB93tTBP9kMNz3cIVfuIfLEP1E_0saiNAwOtrM6xSOXvoiSCMsihWSkW0dq808-R7_lBnr6WHbjkKBX6I3sD0uCcS8kSPbRjEDdG8CeeVXEAEV6spQ.webp"
@@ -256,7 +257,7 @@
     <!-- --------------------- continuar assintindo inicio --------------------- -->
     <div class="px-0 ml-3 py-3">
       <h2 class="h4 mb-4">Continuar assistindo como <span class="text-uppercase">Bruno Gonçalves</span></h2>
-      <div class="d-flex flex-nowrap">
+      <div class="d-flex flex-nowrap py-3 overflow-hidden filmes">
         <div class="filme">
           <img
             src="https://occ-0-1567-1123.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRvngexxF8H1-OzRWFSj6ddD-aB93tTBP9kMNz3cIVfuIfLEP1E_0saiNAwOtrM6xSOXvoiSCMsihWSkW0dq808-R7_lBnr6WHbjkKBX6I3sD0uCcS8kSPbRjEDdG8CeeVXEAEV6spQ.webp"
@@ -345,7 +346,7 @@
     <footer>
       <nav class="py-3">
         <ul class="nav d-flex flex-sm-column flex-md-row justify-content-md-center justify-content-lg-start">
-          <li class=" nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="#">Termos de uso</a>
           </li>
           <li class="nav-item">
@@ -373,7 +374,16 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
     <!-- ------------------------ chamando js bootstrap ------------------------ -->
-
+    <!--
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $('.filmes').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 3
+      });
+    </script>*/-->
   </body>
 
 </html>
