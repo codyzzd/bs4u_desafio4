@@ -14,24 +14,27 @@
   <body>
 
     <!-- navbar com logo 2 opcoes e busca -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="top">
+      <!-- botao do navbar -->
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Netflix-Logo</a>
-
+      <a class="navbar-brand p-2 " href="#">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png"
+          alt="Netflix" height="30px;">
+      </a>
+      <!-- opcoes do menu -->
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a href="#" class="nav-link">Navegar</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Infantil</a></li>
         </ul>
       </div>
-
-      <form class="form-inline my-2 my-lg-0">
+      <!-- campo de busca -->
+      <form class="form-inline ml-auto" id="formnav">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-
       </form>
-
     </nav>
 
     <!-- chamando js boostrap -->
