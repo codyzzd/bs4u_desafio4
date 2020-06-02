@@ -1,26 +1,33 @@
 body {
   background-color: black;
 }
+
 nav#top {
   background-color: black;
-  border-bottom: 1px solid #4d4d4d;
+  border-bottom   : 1px solid #4d4d4d;
 }
+
 input.form-control {
   background-color: black;
-  border-radius: 0px;
+  border-radius   : 0px;
 }
+
 input:hover.form-control {
   background-color: black;
 }
+
 input:active.form-control {
   background-color: black;
 }
+
 input:focus.form-control {
   background-color: black;
 }
+
 #formnav input {
   width: 130px;
 }
+
 /* mudando cores do link no rodape */
 ul.nav li a,
 ul.nav li a:visited {
@@ -40,6 +47,7 @@ ul.nav li.active a {
 .fas {
   color: #ccc;
 }
+
 h1,
 h2,
 h3,
@@ -48,96 +56,124 @@ h5,
 h6 {
   color: #ccc;
 }
+
 /* tirando borda do botao assistir */
 #assistir {
-  border-radius: 0px;
+  border-radius   : 0px;
   background-color: #e30f19;
 }
+
 h5.card-title {
   margin-top: 80px !important;
-  color: white;
+  color     : white;
 }
+
 .card-text {
   color: #ccc !important;
 }
+
 .card-img {
   border-radius: 0px !important;
 }
 
-.full-banner{
-    background-image: url('fundo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    min-height: 120px;
-/* tentando fazer sem pegar uma foto com gradient 
+.full-banner {
+  background-image    : url('fundo.png');
+  background-size     : cover;
+  background-repeat   : no-repeat;
+  background-position : right;
+  min-height          : 200px;
+  /* tentando fazer sem pegar uma foto com gradient 
     -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-      mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));*/
-padding-top:60px !important;
-    
+      mask-image      : linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));*/
+  padding-top         : 60px !important;
+
 }
-.full-banner small, .full-banner p{
-color:#999898;
+
+.full-banner small,
+.full-banner p {
+  color: #999898;
 }
-.desc{
+
+.desc {
   display: none;
-  width: 30vw;
+  width  : 30vw;
 }
+
+
 .filme img {
-    height: 90px;
-  }
+  height: 90px;
+}
+
+
+
+.filme {
+  transition: 250ms all;
+  padding   : 0 2px;
+}
+
+.filme:hover {
+  margin   : 0 40px;
+  transform: scale(1.2);
+}
+
+
 
 /* ///Extra small devices (portrait phones, less than 576px) */
 /* // No media query since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .filme img {
-    height: 120px;
-  }
-  .full-banner{
-      min-height: 400px;
-  }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-     .filme img {
-    height: 120px;
-  }
-  .full-banner{
-      min-height: 400px;
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  /* colocando o fundo gradient do navbar */
-  nav#top {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      -180deg,
-      rgba(0, 0, 0, 1) 45%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    border-bottom: 0px;
-  }
-    .filme img {
-    height: 110px;
-  }
-  .full-banner{
-      min-height: 400px;
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
   .filme img {
-    height: 150px;
+    height: 120px;
   }
-  .full-banner{
+
+  .full-banner {
+    min-height: 400px;
+  }
+
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .filme img {
+      height: 120px;
+    }
+
+    .full-banner {
+      min-height: 400px;
+    }
+  }
+
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+    /* colocando o fundo gradient do navbar */
+    nav#top {
+      background: rgb(0, 0, 0);
+      background: linear-gradient(-180deg,
+          rgba(0, 0, 0, 1) 45%,
+          rgba(0, 0, 0, 0) 100%);
+      border-bottom: 0px;
+    }
+
+    .filme img {
+      height: 110px;
+    }
+
+    .full-banner {
+      min-height: 400px;
+    }
+  }
+
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .filme img {
+      height: 150px;
+    }
+
+    .full-banner {
       min-height: 600px;
+    }
+
+    .desc {
+      display: block;
+    }
   }
-  .desc{
-    display: block;
-  }
-}
